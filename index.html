@@ -1,199 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jay Stewart</title>
-    <link rel="stylesheet" href="./style.css" />
-    <script src="https://kit.fontawesome.com/a3ae5aba6e.js"> crossorigin="anonymous"</script>
-  </head>
-  <body>
-    <section id="landing-page">
-      <nav>
-        <figure>
-          <img id="personal-logo" src="./assets/logo.svg" alt="" />
-        </figure>
-        <ul class="nav__link--list">
-          <li class="nav__link">
-            <a href="#" class="
-            nav__link--anchor
-            link__hover-effect
-            link__hover-effect--black
-            ">About</a>
-          </li>
-          <li class="nav__link">
-            <a href="#" class="
-            nav__link--anchor
-            link__hover-effect
-            link__hover-effect--black
-            ">Projects</a>
-          </li>
-          <li class="nav__link">
-            <a href="#" class="
-            nav__link--anchor
-            link__hover-effect
-            link__hover-effect--black
-            ">Contact</a>
-          </li>
-          <li class="nav__link click">
-            <a href="#" class="
-            nav__link--anchor
-            link__hover-effect
-            link__hover-effect--black
-            "><i class="fas fa-adjust"></i>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jay Stewart</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://kit.fontawesome.com/a3ae5aba6e.js" crossorigin="anonymous"></script>
+  <script scr="index.js"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+emailjs.init({
+  publicKey: "hnP2n1Q8doU5v-nbH",
+});
+})();
+</script>
+</head>
+<body>
+  <section id="landing-page">
+    <nav>
+      <figure>
+        <img id="personal-logo" src="./assets/logo.svg" alt="" />
+      </figure>
+      <ul class="nav__link--list">
+        <li class="nav__link">
+          <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">About</a>
+        </li>
+        <li class="nav__link">
+          <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Projects</a>
+        </li>
+        <li class="nav__link">
+          <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Contact</a>
+        </li>
+        <li class="nav__link click">
+          <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black"><i class="fas fa-adjust"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <header class="header">
+      <div class="header__content--container">
+        <div class="header__content">
+          <h1 class="title">Hey</h1>
+          <h1 class="title title--secondary">I'm Jay</h1>
+        </div>
+        <p class="header__para">
+          I'm a <b class="color">software engineer</b> who enjoys creating websites with great experiences and games that are fun and engaging. 
+          <br>
+          <b class="color">About me!</b>
+        </p>
+        <div class="social__list">
+          <a href="https://www.linkedin.com/in/jay-stewart-38420b261/" target="_blank" class="social__link click"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/creepybrow" target="_blank" class="social__link click"><i class="fab fa-github"></i></a>
+          <a href="https://www.facebook.com/jay.stewart.908" target="_blank" class="social__link click"><i class="fab fa-facebook"></i></a>
+          <a href="./assets/David Bragg Resume.pdf" target="_blank" class="social__link click"><i class="fab fa-file-pdf"></i></a>
+        </div>
+      </div>
+    </header>
+    <button class="mail__btn click">
+      <i class="fa-solid fa-envelope"></i>
+    </button>
+    <button>
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+    </button>
+    <!-- Modal Section -->
+    <div class="modal">
+      <div class="modal__half modal__about">
+        <h3 class="modal__title modal__title--about">Jay Stewart</h3>
+        <h4 class="modal__sub-title modal__subtitle--about">Frontend Software Engineer and Game Developer.</h4>
+        <p class="modal__para">
+          I'm a 34-year-old <span class="modal__color">software engineer</span> living in Clackamas, Oregon. I've recently discovered my passion for making <span class="modal__color">games</span> and <span class="modal__color">websites</span>.
+          <br>
+          Working on improving my skill sets daily by working on difficult engineering problems and various games or applications through <span class="modal__color">FrontendSimplified</span>, <span class="modal__color">Udemy</span>, and <span class="modal__color">Fulltimegamedev.com</span>.
+        </p>
+        <div class="modal__languages">
+          <figure class="modal__language">
+            <img class="modal__language--img" src="./assets/HTML5_logo_and_wordmark.svg.png" alt="">
+            <span class="language__name">HTML</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="./assets/CSS.png" alt="">
+            <span class="language__name">CSS</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="./assets/javascript.png" alt="">
+            <span class="language__name">Javascript</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="./assets/C++.png" alt="">
+            <span class="language__name">C++</span>
+          </figure>
+          <figure>
+            <img class="modal__language" src="./assets/C_Sharp.png" alt="">
+            <span class="language__name">C#</span>
+          </figure>
+          <figure>
+            <img class="modal__language" src="./assets/React.png" alt="">
+            <span class="language__name">REACT</span>
+          </figure>
+        </div>
+      </div>
+      <!-- Form Section -->
+      <div class="modal__half modal__contact">
+        <h3 class="modal__title modal__title--contact">Let's Have a Chat!</h3>
+        <h4 class="modal__sub-title modal__subtitle--contact">I'm currently open for new and exciting opportunities.</h4>
+        <form id="contact__form" onsubmit="contact(event)">
+          <div class="form__item">
+            <label class="form__item--label" for="name">Name</label>
+            <input class="input" name="user_name" type="text">
+          </div>
+          <div class="form__item">
+            <label class="form__item--label" for="email">E-mail</label>
+            <input class="input" email="user_email" type="email">
+          </div>
+          <div class="form__item">
+            <label class="form__item--label" for="message">Message</label>
+            <textarea class="input" name="user_message"></textarea>
+          </div>
+          <button id="contact__submit" class="form__submit">
+            Send it my way
+          </button>
+        </form>
+        <div class="modal__overlay modal__overlay--loading">
+          <i class="fas fa-spinner"></i>
+        </div>
+        <div class="modal__overlay modal__overlay--success">
+          Thanks for the message! Looking forward to speaking to you soon.
+        </div>
+      </div>
+      <i class="fas fa-times modal__exit click"></i>
+    </div>
+  </section>
+  
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <div class="row">
+        <h1 class="section__title">My 2D Game Art!</h1>
+        <ul class="project__list">
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/Hunter.jpg" class="project__img" alt="">
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">The Hunter</h3>
+                <h4 class="project__description--sub-title">Paint Tool Sai, HTML, CSS, Javascript, C++, C#</h4>
+                <p class="project__description--para">This is the main character of my game. Only written with C#.</p>
+                <div class="project__description--links">
+                  <a href="" class="project__description--link"><i class="fab fa-github"></i></a>
+                  <a href="" class="project__description--link"><i class="fab fa-facebook"></i></a>
+                  <a href="" class="project__description--link"><i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
-      </nav>
-      <header class="header">
-        <div class="header__content--container">
-          <div class="header__content">
-            <h1 class="title">Hey</h1>
-            <h1 class="title title--secondary">I'm Jay</h1>
-        </div>
-            <p class="header__para">
-                I'm a <b class="color">software engineer </b>who enjoys creating websites with great experiences and games that are fun and engaging. 
-                <br>
-                <b class="color">About me!</b>
-            </p>
-            <div class="social__list">
-                <a href="https://www.linkedin.com/in/jay-stewart-38420b261/" target="_blank" class="social__link click">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://github.com/creepybrow" target="_blank" class="social__link click">
-                    <i class="fab fa-github"></i>
-                </a>
-               
-                <a href="https://www.facebook.com/jay.stewart.908" target="_blank" class="social__link click">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="./assets/David Bragg Resume.pdf" target="_blank"class="social__link click">
-                  <i class="fab fa-file-pdf"></i>
-              </a>
-            </div>
-        </div>
-        </div>
-      </header>
-      <button class="mail__btn click">
-        <i class="fa-solid fa-envelope"></i>
-      </button>
-      <button>
-        <a href="#projects" class="scroll">
-          <div class="scroll__icon click"></div>
-        </a>
-      </button>
-      <div class="modal">
-        <div class="modal__half modal__about">
-          <h3 class="modal__title modal__title--about"> Jay Stewart</h3>
-          <h4 class="modal__sub-title modal__subtitle--about">Frontend Software Engineer and Game Developer.</h4>
-          <p class="modal__para">
-            I'm a 34 year old <span class="modal__color">Software engineer </span>software engineer living in Clackamas Oregon. I've recently discovered my passion for making <span class="modal__color">games </span>games and <span class="modal__color">websites</span>.
-            <br>
-            Working on improving my skill sets daily by working on difficult engineering problems and various games or applications through <span class="modal__color">FrontendSimplified </span>, <span class="modal__color">Udemy </span>, and <span class="modal__color">Fulltimegamedev.com</span>.
-          </p>
-          <div class="modal__languages">
-            <figure class="modal__language">
-              <img class="modal__language--img" src="./assets/HTML5_logo_and_wordmark.svg.png" alt="">
-              <span class="language__name">HTML</span>
-            </figure>
-            <figure class="modal__language">
-              <img class="modal__language--img" src="./assets/CSS.png" alt="">
-              <span class="language__name">CSS</span>
-            </figure>
-
-            <figure class="modal__language">
-              <img class="modal__language--img" src="./assets/javascript.png" alt="">
-              <span class="language__name">Javascript</span>
-            </figure>
-            <figure class="modal__language">
-              <img class="modal__language--img" src="./assets/C++.png" alt="">
-              <span class="language__name">C++</span>
-            </figure>
-            <figure>
-              <img class="modal__language" src="./assets/C_Sharp.png" alt="">
-              <span class="language__name">C#</span>
-            </figure>
-            <figure>
-              <img class="modal__language" src="./assets/React.png" alt="">
-              <span class="language__name">REACT</span>
-            </figure>
-          </div>
-        </div>
-        <div class="modal__half modal__contact">Let's Have a chat.</div>
       </div>
-    </section>
-    <section id="projects">
-      <div class="container">
-        <div class="row">
-          <h1 class="section__title">
-            My 2d game art!
-          </h1>
-          <ul class="project__list">
-            <li class="project">
-              <div class="project__wrapper">
-                <img src="./assets/Hunter.jpg" class="project__img" alt="">
-                <div class="project__wrapper--bg"></div>
-                <div class="project__description">
-                <h3 class="project__description--title">
-                  The Hunter
-                </h3>
-                <h4 class="project__descriptioni--sub-title">
-                  Paint Tool Sai, HTML, CSS, Javascript, C++, C#
-                </h4>
-                <p class="project__description--para">This is the main character of my game. Only written with C#</p>
-              <div class="project__description--links">
-                <a href="" class="project__description--link">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="" class="project__description--link">
-                  <i class="fab fa-facebook"></i>
-                </a>
-                <a href="" class="project__description--link">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-              </div>
-              </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div class="container">
-        <div class="row footer__row">
+    </div>
+  </section>
+  
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="row footer__row">
         <figure>
-          <img  class="footer__logo--img" src="./assets/logo.svg" alt="">
+          <img class="footer__logo--img" src="./assets/logo.svg" alt="">
         </figure>
         <div class="footer__social--list">
-          <a href="#" class="
-          footer__social--link
-          link__hover-effect
-          link__hover-effect--white"
-          >
-          GitHub
-          <a href="#" class="
-          footer__social--link
-          link__hover-effect
-          link__hover-effect--white"
-          >
-          Linkedin
-          <a href="#" class="
-          footer__social--link
-          link__hover-effect
-          link__hover-effect--white"
-          >
-          Facebook
-          <a href="#" class="
-          footer__social--link
-          link__hover-effect
-          link__hover-effect--white"
-          >
-          Resume
-          </a>
+          <a href="#" class="footer__social--link link__hover-effect link__hover-effect--white">GitHub</a>
+          <a href="#" class="footer__social--link link__hover-effect link__hover-effect--white">Linkedin</a>
+          <a href="#" class="footer__social--link link__hover-effect link__hover-effect--white">Facebook</a>
+          <a href="#" class="footer__social--link link__hover-effect link__hover-effect--white">Resume</a>
         </div>
         <div class="footer__copyright">Copyright &copy; 2024 Jay Stewart FES</div>
       </div>
     </div>
-    </footer>
-  </body>
+  </footer>
+</body>
 </html>
