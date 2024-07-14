@@ -7,6 +7,9 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background:linear-gradient(45deg, rgb(79, 79, 157), rgb(68, 26, 26));
     
@@ -281,9 +284,11 @@ Landing
    border: none;
    color:rgb(60, 56, 56);
    background-color: rgba(133, 125, 144, 0.546);
-   position:absolute;
+   position:fixed;
    bottom:32px;
    right:40px;
+   z-index: 100;
+   box-shadow: 0 12px 30px 0 rgb(0 , 0, 0, 0.50);
 }
 .scroll{
     position:absolute;
@@ -512,6 +517,7 @@ projects
 footer
 */
 footer{
+    position:relative;
     background: linear-gradient(45deg, rgba(31, 21, 99, 0.442),rgba(21, 173, 168, 0.29)70%);
     display: flex;
     padding:6% 0;
@@ -534,4 +540,94 @@ footer{
 .footer__social--link,
 .footer__copyright{
     color:white;
+}
+/*
+SHAPES
+*/
+.shape{
+    position:fixed;
+}
+.shape--0{
+    top: 15vh;
+    left:50vw;
+}
+.shape--1{
+    top: 15vh;
+    left:80vw;
+}
+.shape--2{
+    top: 15vh;
+    left:80vw;
+}
+.shape--3{
+    top: 50vh;
+    left:5vw;
+}
+.shape--4{
+    top:50vh;
+    left:50vw;
+}
+.shape--5{
+    top: 50vh;
+    left:80vw;
+}
+.shape--6{
+    top: 80vh;
+    left:5vw;
+}
+.shape--7{
+    top: 80vh;
+    left:50vw;
+}
+.shape--8{
+    top: 80vh;
+    left:80vw;
+}
+/* Small phones, tables, large smart phones*/
+@media (max-width: 768px){
+    .title{
+        font-size: 80px;
+    }
+    .header__para{
+        font-size: 20px;
+    }
+    .modal{
+        top:0;
+        left:0;
+        transform:none;
+        height:auto;
+        width:100%;
+        flex-direction: column-reverse;
+        border-radius: 0;
+    }
+    .modal__half{
+        width:100%;
+    }
+}
+/*small phones*/
+@media(max-width:480px){
+    .title{
+        font-size: 52px;
+    }
+    .header__para{
+        font-size: 18px;
+    }
+    .nav__link:first-child{
+        display:none;
+    }
+    .project__description--para{
+        display:none;
+    }
+    .project__description{
+        left:0;
+        padding:0;
+        width:100%;
+        text-align: center;
+    }
+    .project__description--sub-title{
+        margin-bottom:8px;
+    }
+    .modal__half{
+        padding:40px;
+    }
 }
